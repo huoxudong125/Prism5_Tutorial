@@ -5,7 +5,7 @@ using System.Windows;
 
 namespace PennyWatch
 {
-    class PWBootstrapper : UnityBootstrapper
+    internal class PWBootstrapper : UnityBootstrapper
     {
         /// <summary>
         /// Creates and returns a directory module catalog.
@@ -20,7 +20,7 @@ namespace PennyWatch
         /// </summary>
         protected override void ConfigureModuleCatalog()
         {
-            ((DirectoryModuleCatalog)this.ModuleCatalog).ModulePath = @".\Modules";
+            ((DirectoryModuleCatalog) this.ModuleCatalog).ModulePath = @".\Modules";
         }
 
         /// <summary>

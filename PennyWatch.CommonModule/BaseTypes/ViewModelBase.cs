@@ -10,7 +10,8 @@ namespace PennyWatch.CommonModule.BaseTypes
 {
     public abstract class ViewModelBase : BindableBase, IConfirmNavigationRequest
     {
-        public virtual void ConfirmNavigationRequest(NavigationContext navigationContext, Action<bool> continuationCallback)
+        public virtual void ConfirmNavigationRequest(NavigationContext navigationContext,
+            Action<bool> continuationCallback)
         {
             continuationCallback(true);
         }

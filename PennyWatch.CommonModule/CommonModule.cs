@@ -2,7 +2,7 @@
 
 namespace PennyWatch.CommonModule
 {
-    [Module(ModuleName="CommonModule", OnDemand=false)]
+    [Module(ModuleName = "CommonModule", OnDemand = false)]
     public class CommonModule : IModule
     {
         public void Initialize()

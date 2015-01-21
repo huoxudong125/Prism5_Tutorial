@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace PennyWatch.HomeModule.ViewModels
 {
-    class HomeModuleWorkspaceViewModel : ViewModelBase
+    internal class HomeModuleWorkspaceViewModel : ViewModelBase
     {
-
     }
 }

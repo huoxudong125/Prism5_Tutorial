@@ -27,9 +27,11 @@ namespace PennyWatch.AccountModule
             string ribbonRegionName = ConfigurationManager.AppSettings["RibbonRegionName"];
             string workspaceRegionName = ConfigurationManager.AppSettings["WorkspaceRegionName"];
 
-            _RegionManager.RegisterViewWithRegion(ribbonRegionName, typeof(Views.AccountModuleRibbonTabView));
+            _RegionManager.RegisterViewWithRegion(ribbonRegionName, typeof (Views.AccountModuleRibbonTabView));
 
-            _RegionManager.Regions[workspaceRegionName].Add(new Views.AccountModuleWorkspaceView(), Settings.Default.WorkspaceViewName);
+            _RegionManager.Regions[workspaceRegionName].Add(new Views.AccountModuleWorkspaceView(),
+                Settings.Default.WorkspaceViewName);
+
         }
     }
 }

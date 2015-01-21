@@ -7,7 +7,12 @@ using System.Threading.Tasks;
 
 namespace PennyWatch.AccountModule.ViewModels
 {
-    class AccountModuleWorkspaceViewModel : BindableBase
+    internal class AccountModuleWorkspaceViewModel : BindableBase
     {
+        public string AccountWorkspaceRegionName
+        {
+            get { return "AccountWorkspaceRegionName"; }
+        }
+
     }
 }

@@ -8,22 +8,16 @@ using System.Threading.Tasks;
 
 namespace PennyWatch
 {
-    class ShellViewModel : BindableBase
+    internal class ShellViewModel : BindableBase
     {
         public string RibbonRegionName
         {
-            get
-            {
-                return ConfigurationManager.AppSettings["RibbonRegionName"] as string;
-            }
+            get { return ConfigurationManager.AppSettings["RibbonRegionName"] as string; }
         }
 
         public string WorkspaceRegionName
         {
-            get
-            {
-                return ConfigurationManager.AppSettings["WorkspaceRegionName"] as string;
-            }
+            get { return ConfigurationManager.AppSettings["WorkspaceRegionName"] as string; }
         }
     }
 }
